@@ -1,0 +1,6 @@
+  <.table id="order" rows={@order}>
+  <:col :let={order_item} label="Title"><%= order_item.id %></:col>
+  <:col :let={order_item} label="Total"><%= order_item.total_price %></:col>
+  </.table>
+
+<.back navigate={~p"/products"}>Back to products</.back>
