@@ -44,6 +44,8 @@ defmodule EcommerceWeb.Router do
     resources "/orders", OrderController, only: [:create, :show]
     get "/order/:id", OrderController, :show_order
     live "/livecart", CartLive.Index , :index
+    live "/chat", ChatLive.Index
+
   end
 
   # Other scopes may use custom stacks.
